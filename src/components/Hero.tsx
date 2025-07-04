@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Star, Users, Award } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Star, Users, Award } from "lucide-react";
 
 const Hero: React.FC = () => {
   const containerVariants = {
@@ -10,8 +10,8 @@ const Hero: React.FC = () => {
       transition: {
         staggerChildren: 0.2,
         delayChildren: 0.3,
-      }
-    }
+      },
+    },
   };
 
   const itemVariants = {
@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const floatingVariants = {
@@ -32,13 +32,16 @@ const Hero: React.FC = () => {
       transition: {
         duration: 4,
         repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
-    <section id="home" className="min-h-screen relative bg-gradient-to-br from-accent-50 via-white to-secondary-50">
+    <section
+      id="home"
+      className="min-h-screen relative bg-gradient-to-br from-accent-50 via-white to-secondary-50"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -80,7 +83,7 @@ const Hero: React.FC = () => {
               variants={itemVariants}
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-6"
             >
-              Carry Your 
+              Carry Your
               <span className="text-primary-500"> Style</span>
               <br />
               Everywhere
@@ -90,8 +93,8 @@ const Hero: React.FC = () => {
               variants={itemVariants}
               className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
-              Discover our handcrafted collection of sustainable tote bags. Made with love, 
-              designed for life, and perfect for every adventure.
+              Discover our handcrafted collection of sustainable tote bags. Made
+              with love, designed for life, and perfect for every adventure.
             </motion.p>
 
             <motion.div
@@ -128,9 +131,9 @@ const Hero: React.FC = () => {
               className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0"
             >
               {[
-                { icon: Users, value: '50K+', label: 'Happy Customers' },
-                { icon: Award, value: '4.9', label: 'Average Rating' },
-                { icon: Star, value: '100%', label: 'Eco-Friendly' }
+                { icon: Users, value: "50K+", label: "Happy Customers" },
+                { icon: Award, value: "4.9", label: "Average Rating" },
+                { icon: Star, value: "100%", label: "Eco-Friendly" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -139,7 +142,9 @@ const Hero: React.FC = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <stat.icon className="w-6 h-6 text-primary-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                  <div className="text-2xl font-bold text-gray-900">
+                    {stat.value}
+                  </div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </motion.div>
               ))}
@@ -163,10 +168,10 @@ const Hero: React.FC = () => {
                 alt="Stylish woman with tote bag"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              
+
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-lg"
+                className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-lg mr-3"
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
@@ -177,7 +182,7 @@ const Hero: React.FC = () => {
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-6 -left-6 bg-primary-500 text-white rounded-2xl p-4 shadow-lg"
+                className="absolute -bottom-6 -left-6 bg-primary-500 text-white rounded-2xl p-4 shadow-lg ml-3"
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
               >
