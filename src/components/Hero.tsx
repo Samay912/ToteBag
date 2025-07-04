@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-accent-50 via-white to-secondary-50">
+    <section id="home" className="min-h-screen relative bg-gradient-to-br from-accent-50 via-white to-secondary-50">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <motion.div
