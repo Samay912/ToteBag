@@ -85,7 +85,7 @@ const Features: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
             Why Choose Our Tote Bags?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We're committed to creating products that not only look great but also 
             make a positive impact on the world around us.
           </p>

@@ -91,7 +91,7 @@ const ProductShowcase: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
             Our Featured Collection
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover handcrafted tote bags that blend style, sustainability, and functionality. 
             Each piece is thoughtfully designed to complement your lifestyle.
           </p>

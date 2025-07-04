@@ -42,7 +42,7 @@ const About: React.FC = () => {
               <span className="text-primary-500"> Accessories</span>
             </h2>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
               Founded in 2020, ToteBag Co. began with a simple vision: to create beautiful, 
               sustainable bags that don't compromise on style or functionality. What started 
               as a small studio has grown into a global movement of conscious consumers.
@@ -90,7 +90,7 @@ const About: React.FC = () => {
               
               {/* Floating Quote */}
               <motion.div
-                className="absolute -bottom-8 -left-8 bg-white rounded-2xl p-6 shadow-xl max-w-sm"
+                className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl p-4 sm:p-6 shadow-xl w-[calc(100%-2rem)] sm:max-w-sm"
                 initial={{ opacity: 0, y: 50, rotate: -5 }}
                 whileInView={{ opacity: 1, y: 0, rotate: 0 }}
                 viewport={{ once: true }}

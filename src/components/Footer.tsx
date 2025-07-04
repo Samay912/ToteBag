@@ -61,12 +61,12 @@ const Footer: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-white mb-4">
             Stay in the Loop
           </h3>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Get the latest updates on new products, exclusive offers, and sustainability initiatives.
           </p>
           
           <motion.div
-            className="max-w-md mx-auto flex"
+            className="max-w-md mx-auto flex flex-col sm:flex-row gap-2 sm:gap-0"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
@@ -75,10 +75,10 @@ const Footer: React.FC = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-l-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
+              className="flex-1 px-6 py-3 sm:py-4 rounded-full sm:rounded-l-full sm:rounded-r-none text-gray-900 focus:outline-none focus:ring-2 focus:ring-white w-full"
             />
             <motion.button
-              className="px-8 py-4 bg-white text-primary-500 rounded-r-full font-semibold hover:bg-gray-100 transition-colors duration-200"
+              className="px-4 py-3 sm:px-8 sm:py-4 bg-white text-primary-500 rounded-full sm:rounded-r-full sm:rounded-l-none font-semibold hover:bg-gray-100 transition-colors duration-200 w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

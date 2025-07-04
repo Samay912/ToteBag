@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
 
             <motion.p
               variants={itemVariants}
-              className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
               Discover our handcrafted collection of sustainable tote bags. Made with love, 
               designed for life, and perfect for every adventure.
